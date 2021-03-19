@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/rwdindex.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body class="cf">
+
+    <header id="header" class="cf">
+        <h1><a href="index.html"><img src="./images/logo-light.png" alt=""></a></h1>
+        <div class="open">
+            <span class="blind">메뉴열기</span>
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav">
+            <ul class="depth1 cf">
+                <li><a href="index.html"><i class="fas fa-arrow-right"></i>HOME</a></li>
+                <li><a href="intro.html"><i class="fas fa-arrow-right"></i>COMPANY</a>
+                    <ul class="depth2">
+                        <li><a href="intro.html"><i class="fas fa-arrow-right"></i>회사소개</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>연혁</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none"><i class="fas fa-arrow-right"></i>BUSINESS</a>
+                    <ul class="depth2">
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>사업소개</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>사업분야</a></li>
+                    </ul>
+                </li>
+                <li><a href="ajax.html"><i class="fas fa-arrow-right"></i>PRODUCT</a>
+                    <ul class="depth2">
+                        <li><a href="ajax.html"><i class="fas fa-arrow-right"></i>제품소개(페이지)</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>제품소개(게시판A)</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>제품소개(게시판B)</a></li>
+                    </ul>
+                </li>
+                <li><a href="notice.html"><i class="fas fa-arrow-right"></i>CUSTOMER</a>
+                    <ul class="depth2">
+                        <li><a href="notice.html"><i class="fas fa-arrow-right"></i>공시사항</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>이벤트</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>FAQ</a></li>
+                        <li><a href="#none"><i class="fas fa-arrow-right"></i>Q&A</a></li>
+                    </ul>
+                </li>
+                <li><a href="inquiry.html"><i class="fas fa-arrow-right"></i>CONTACT</a>
+                    <ul class="depth2">
+                        <li><a href="inquiry.html"><i class="fas fa-arrow-right"></i>문의하기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="close">
+            <span class="blind">메뉴닫기</span>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="login">
+            <a href="login.html">LOGIN</a>
+            <a href="join.html">JOIN</a>
+        </div>
+    </header>
+    <section id="section">
+        <article>
+            <div class="txtbox">
+                <h2>회원서비스</h2>
+                <p>원픽셀 스튜디오의 다양한 서비스를 누려보세요.</p>
+            </div>
+        </article>
+        <article>
+            <div class="loginbox row">
+                <h2>로그인</h2>
+                <form action="#none" method="POST">
+                    <div class="idpw">
+                        <h3>아이디</h3>
+                        <p><input type="text" id="idbox" name="idbox"></p>
+                        <h3>비밀번호</h3>
+                        <p><input type="password" id="pwbox" name="pwbox"></p>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">로그인</button>
+                        <button type="button"><a href="join.html">회원가입</a></button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+    <footer id="footer" class="cf">
+        <div>
+            <img src="./images/logo-light.png" alt="">
+            <p>&copy; 2019 ONEPIXEL STUDIO<br>
+                All Rights Reserved.</p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div class="title"><a href="#none">COMPANY</a></div>
+                    <div class="contant">
+                        /
+                        <a href="#none">회사소개</a>
+                        <a href="#none">연혁</a>
+                        <a href="#none">오시는길</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title"><a href="#none">BUSINESS</a></div>
+                    <div class="contant">
+                        <a>/</a>
+                        <a href="#none">사업소개</a>
+                        <a href="#none">사업분야</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title"><a href="#none">PRODUCT</a></div>
+                    <div class="contant">
+                        <a>/</a>
+                        <a href="#none">제품소개(페이지)</a>
+                        <a href="#none">제품소개(게시판A)</a>
+                        <a href="#none">제품소개(게시판B)</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title"><a href="#none">CUSTOMER</a></div>
+                    <div class="contant">
+                        <a>/</a>
+                        <a href="#none">공시사항</a>
+                        <a href="#none">이벤트</a>
+                        <a href="#none">FAQ</a>
+                        <a href="#none">Q&A</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="title"><a href="#none">CONTACT</a></div>
+                    <div class="contant">
+                        <a>/</a>
+                        <a href="#none">문의하기</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>ONEPIXEL STUDIO|대표 : 전율</p>
+            <p>서울특별시 중구 세종대로 110<br>
+                one-pixel@naver.com<br>
+                +82 70-1234-5678</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+    
+</body>
+</html>

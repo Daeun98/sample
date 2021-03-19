@@ -1,0 +1,48 @@
+@charset "utf-8";
+#section{background: #fff; overflow: hidden;}
+
+article:first-child {
+    height:400px;
+    background:url(../images/sub_hero_img5.jpg) no-repeat center;
+    background-size:cover;
+    position:relative;
+}
+article:first-child .txtbox {
+    position:absolute; left:0; right:0; top:50%;
+    text-align:center; letter-spacing:-0.1em;
+}
+article:first-child .txtbox h2 {font-size:36px; color:#fff; }
+article:first-child .txtbox p {font-size:15px; color:#ccc; margin-top:20px;}
+
+.title { border:1px solid #ddd;}
+.title .depth1 > li {float: left;}
+.title .depth1 > li {
+    padding: 17px 40px; color: #333;
+    border-right:1px solid #ddd;
+}
+.title .depth1 > li:first-child {border-left:1px solid #ddd;}
+.title .depth1 > li:last-child {color: #4263EB;}
+
+/* login */
+.inquirybox {padding-top: 100px; padding-bottom: 100px;
+    width: 600px;}
+.inquirybox h2 {font-size:36px; padding-bottom:80px; text-align: center;}
+.inquirybox h3 {color: #000; font-size:14px;
+    margin-bottom: 15px; font-weight:bold; }
+.inquirybox input[type='text'],
+.inquirybox select,
+.inquirybox textarea {height: 50px; background: #f4f4f6;
+    text-indent: 1em; vertical-align: middle; border: none;
+    width: 100%; margin-bottom:30px;}
+.inquirybox textarea {height:100px;}
+.inquirybox .btn {text-align: center;}
+.inquirybox .btn button {width: 275px; height: 50px;
+    background:#4263EB; border:none;
+    margin:80px 2px 0; border-radius:5px;
+    color: #fff; font-size:16px;
+    cursor: pointer; transition: all 0.5s;
+}
+.inquirybox .btn button[type='reset'] {
+    background:#bbb; color:#fff;
+}
+.inquirybox .btn button:hover {opacity:0.8;}

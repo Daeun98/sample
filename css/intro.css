@@ -1,0 +1,67 @@
+@charset "utf-8";
+#section{background: #fff; overflow: hidden;}
+
+article:first-child {
+    height:400px;
+    background:url(../images/sub_hero_img1.jpg) no-repeat center;
+    background-size:cover;
+    position:relative;
+}
+article:first-child .txtbox {
+    position:absolute; left:0; right:0; top:50%;
+    text-align:center; letter-spacing:-0.1em;
+}
+article:first-child .txtbox h2 {font-size:36px; color:#fff; }
+article:first-child .txtbox p {font-size:15px; color:#ccc; margin-top:20px;}
+
+
+.title { border:1px solid #ddd;}
+.title .depth1 > li {float: left;}
+.title .depth1 > li {
+    padding: 17px 40px; color: #333;
+    border-right:1px solid #ddd;
+}
+.title .depth1 > li:first-child {border-left:1px solid #ddd;}
+.title .depth1 > li:last-child {color: #4263EB;}
+
+/* backg */
+.introBox {padding-top:100px; padding-bottom:100px;}
+.introBox h2 {font-size:36px; padding-bottom:80px; text-align: center;}
+.introBox .backg {
+    background:url(../images/about_visual_bg.jpg) no-repeat center;
+    background-size:cover; height:750px; position:relative;
+    color:#fff;
+}
+.introBox .backg .txtbox {
+    position:absolute; top:50%; transform:translateY(-50%);
+    left:0; right:0; text-align:center;
+}
+.introBox .backg .txtbox > p {font-size:25px; line-height:1.5;
+    margin-bottom:50px;}
+.introBox .backg .txtbox ul li {float:left; width:23%; 
+    border-right:1px solid #555; height:300px;
+}
+.introBox .backg .txtbox ul li:first-child {
+    border-left:1px solid #555;
+    margin-left:4%;
+}
+.introBox .backg .txtbox ul li p:nth-child(1) {
+    font-size:40px; padding:50px 0;
+}
+.introBox .backg .txtbox ul li p:nth-child(2) {
+    font-size:20px;
+}
+.introBox .backg .txtbox ul li p:nth-child(3) {
+    padding:30px 20px 50px; line-height:1.5; color:#ddd;
+}
+
+/* table */
+.introBox .table {padding-top:100px; padding-bottom:100px; text-align:center;}
+.introBox .table p {line-height:1.5; margin-bottom:50px;}
+.introBox .table table {text-align:left; width:90%; margin:0 auto;}
+.introBox .table th {border-top:1px solid #000; padding:25px 15px;
+    width:15%;}
+.introBox .table td {border-top:1px solid #ddd; padding:25px 15px;
+    width:85%; color:#999;}
+
+

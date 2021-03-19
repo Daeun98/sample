@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* body에는 overflow:hidden 과 class='cf'를 주면 안됨 */
+body {font-family: 'Noto Sans KR',sans-serif;}
+.row {max-width:1330px; margin:0 auto; padding:0 15px;}
+
+/* header */
+#header {position:fixed; width:100%; top:0; left:0;
+    padding:0 80px; height:90px;  color:#fff; z-index:999999;}
+#header.on {background:rgba(0,0,0,0.9); height:80px;}
+#header h1 {position:absolute; top:50%;
+    transform:translateY(-50%); width:210px;}
+#header .nav {position:absolute; top:50%;
+    transform:translateY(-50%);}
+#header .nav .depth1 > li {float:left; position:relative;}
+#header .nav .depth1 > li > a{
+    padding:34px 20px; font-size:12px; display: block;
+    font-weight:bold; font-family: 'Poppins', sans-serif;
+    letter-spacing:0.2em;
+}
+#header .nav .depth1 > li:hover > a {color:#ddd;}
+#header .nav .depth1 > li > a > i {width:0; overflow:hidden; margin-bottom:-2px; transition: all 0.3s;}
+#header .nav .depth2 {
+    position:absolute; top:100%; width:200%; left:-1px;
+    background:#fff; color:#999; padding:30px 0;
+    font-size:12px; display:none;
+}
+/* #header .nav .depth1 > li.on .depth2 {display:block;} */
+#header .nav .depth2 > li > a {
+    display:block;
+    padding:10px 0 10px 30px;
+}
+#header .nav .depth2 > li:hover > a {
+    color:#000; position: relative;
+}
+#header .nav .depth2 > li > a > i {width:0; overflow:hidden; margin-bottom:-2px; transition: all 0.3s;}
+#header .nav .depth2 > li:hover > a > i {width:9%}
+
+#header .login {position:absolute; top:50%;
+    transform:translateY(-50%); right:80px;
+    font-size:12px; font-weight:bold;}
+#header .login a:nth-child(1) {padding-right:15px;
+    border-right:2px solid rgba(255,255,255,0.2);}
+#header .login a:nth-child(2) {padding-left:15px;
+    border-right:2px solid rgba(255,255,255,0.2);}
+#header .open,
+#header .close {display:none;}
+
+
+
+/* footer */
+#footer {padding:80px; background:#1B1B1B; color:#666;
+    position: fixed; display: none;
+    width:100%; bottom:0; left:0; z-index:-999; 
+    } 
+#footer.on {display: block !important;}
+#footer > div {float: left; width:20%;}
+#footer > div:nth-child(1) > img {width:180px; opacity:0.5; margin-bottom:15px;}
+#footer > div:nth-child(1) > p,
+#footer > div:nth-child(3) > p {font-size:13px; margin-bottom:15px; line-height:2;
+    letter-spacing:0.1em; }
+#footer > div:nth-child(2) {width:60%; padding-left: 70px;}
+#footer > div:nth-child(2) li {margin-bottom:20px;}
+#footer > div:nth-child(2) li > div {display: inline-block; font-size:14px;}
+#footer > div:nth-child(2) .title {color:#AAA; font-weight: bold; border:none;
+    letter-spacing:0.1em; font-family:'Poppins', sans-serif; margin-right:7px;}
+#footer > div:nth-child(2) .title:hover {color: #fff;}
+#footer > div:nth-child(2) .contant > a { margin:0 7px;}

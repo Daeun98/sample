@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a {color: inherit; text-decoration: none;}
+ul {list-style: none;}
+img {vertical-align: middle; width: 100%;}
+
+#section{background: #fff; overflow: hidden;}
+
+article:nth-of-type(1) {
+    height:400px;
+    background:url(../images/sub_hero_img3.jpg) no-repeat center;
+    background-size:cover;
+    position:relative;
+}
+article:nth-of-type(1) .txtbox {
+    position:absolute; left:0; right:0; top:50%;
+    text-align:center; letter-spacing:-0.1em;
+}
+article:nth-of-type(1) .txtbox h2 {font-size:36px; color:#fff; }
+article:nth-of-type(1) .txtbox p {font-size:15px; color:#ccc; margin-top:20px;}
+article:nth-of-type(2) {padding-bottom: 100px}
+article:nth-of-type(2) h2 {font-size:36px; padding-bottom:80px; text-align: center;}
+
+.comBox .title { border:1px solid #ddd; margin-bottom: 100px}
+.comBox .title .depth1 > li {float: left;}
+.comBox .title .depth1 > li {
+    padding: 17px 40px; color: #333;
+    border-right:1px solid #ddd;
+}
+.comBox .title .depth1 > li:first-child {border-left:1px solid #ddd;}
+.comBox .title .depth1 > li:last-child {color: #4263EB;}
+
+.row {max-width: 1200px; margin: 0 auto;}
+.webbox ul {overflow: hidden;}
+.webbox ul li {margin-bottom: 30px; width: 49%; float: left; margin-right: 2%;}
+.webbox ul li .imgBox{float: left; width: 50%;}
+.webbox ul li:nth-child(2n+1) {clear: both;}
+.webbox ul li:nth-child(2n) {margin-right: 0;}
+.webbox .txtBox {padding: 100px 0 0 20px;float: left; width: 50%; }
+.webbox .txtBox h3 {line-height: 2; font-size: 22px; font-weight: bold;}
+.webbox .txtBox p {line-height: 1.5;}
+.webbox .txtBox strong {font-weight: normal; color: red;}
+.webbox .pushBtn {text-align: right; margin-top: 50px;}
+.webbox .pushBtn button {width: 130px; height: 50px;
+    background:#333; color: #fff;
+    cursor: pointer; border-radius:50px;
+}
+.webbox ul li > button {margin:10px 0 0 20px;
+    width: 50px; height: 30px;
+    background:#333; color: #fff;
+    cursor: pointer; border-radius:50px;}
+
+.webbox .formBox {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.webbox form {
+    width: 500px; margin: 0 auto;
+    background: #fff;
+    position: relative; top: 50%;
+    transform: translateY(-50%);
+    padding: 30px;
+}
+.webbox form p {padding: 10px;}
+.webbox form .butbox {text-align: center;}
+.webbox form .butbox > button {margin:10px 5px;
+    width: 50px; height: 30px;
+    background:#333; color: #fff;
+    cursor: pointer; border-radius:50px;}

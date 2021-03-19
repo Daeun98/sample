@@ -1,0 +1,39 @@
+@charset "utf-8";
+#section{background: #fff; overflow: hidden;}
+
+article:first-child {
+    height:400px;
+    background:url(../images/sub_hero_img1.jpg) no-repeat center;
+    background-size:cover;
+    position:relative;
+}
+article:first-child .txtbox {
+    position:absolute; left:0; right:0; top:50%;
+    text-align:center; letter-spacing:-0.1em;
+}
+article:first-child .txtbox h2 {font-size:36px; color:#fff; }
+article:first-child .txtbox p {font-size:15px; color:#ccc; margin-top:20px;}
+
+
+/* login */
+.loginbox {padding-top: 100px; padding-bottom: 100px;
+    width: 350px;}
+.loginbox h2 {font-size:36px; padding-bottom:80px; text-align: center;}
+.loginbox h3 {color: #4263EB; font-size:14px;
+    margin-bottom: 15px; font-weight: bold; }
+.loginbox input[type='text'],
+.loginbox input[type='password'] {height: 50px; background: #f4f4f6;
+    text-indent: 1em; vertical-align: middle; border: none;
+    width: 100%; margin-bottom: 20px;}
+.loginbox .btn {text-align: center;}
+.loginbox .btn button {width: 130px; height: 50px;
+    border: 1px solid #4263EB; background:#4263EB;
+    margin: 30px 10px; border-radius:50px;
+    color: #fff; font-size:16px;
+    cursor: pointer; transition: all 0.5s;
+}
+.loginbox .btn button[type='button'] {
+    background: #fff; color: #4263EB;
+}
+.loginbox .btn button:hover {background:#333; color:#eee;
+    border: 1px solid #333;}

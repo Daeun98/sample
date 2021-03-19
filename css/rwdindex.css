@@ -1,0 +1,191 @@
+@media screen and (max-width:1200px) {
+    #header .open {position:absolute; top:50%; right:80px; cursor: pointer;
+        transform:translateY(-50%); font-size:15px; color:#fff;}
+    #header .close {position:absolute; top:60px; right:50px; cursor: pointer;
+        font-size:30px; color:#999; transition: all 0.3s;}
+    #header .close:hover {color:#fff;}
+    #header .open.on { display:block;}
+    #header .close.on { display:block;}
+
+    #header .nav {position:fixed; top:0px; padding:120px 0 0 70px;
+        transform:translateY(0%); right:-440px; color:#555;
+        background: #000; width: 440px;
+        bottom:0; opacity:0;}
+    /* #header .nav.on { right: 0;} */
+    #header .nav .depth1 {margin-top:40px;}
+    #header .nav .depth1 > li {float:none; position:relative;}
+    #header .nav .depth1 > li > a{
+        padding:15px 0px; font-size:15px; display: block;
+        font-weight:bold; font-family:'Noto Sans KR',sans-serif;
+        letter-spacing:normal; 
+    }
+    #header .nav .depth1 > li:hover > a > i {width:6%}
+    #header .nav .depth2 > li:hover > a > i {width:0%}
+    #header .nav .depth2 {
+        position:static; top:100%; width:200%; left:-1px;
+        background:#000; color:#999; padding:0; 
+        font-size:12px; display:none; font-weight: bold; 
+    }
+    #header .nav .depth2 > li:hover > a {
+        color:#fff; position: relative;
+    }
+
+    #header .login {position:absolute; top:50%;
+        transform:translateY(-50%); right:120px;
+        font-size:12px; font-weight:bold;}
+    #header .login.on {position:fixed; top:90%; right:-170px; 
+        z-index: 999999; color:#777;width: 440px;}
+
+    #header .nav::after {content:''; position:absolute; bottom:130px;
+        left:0; right:0px; height:3px; margin: 0 auto;
+        z-index: 999999; background:#333; width: 320px;}
+
+    #footer > div {float:none; width:100%;}
+    #footer > div:nth-child(2) {width:100%; padding-left:0px;
+        margin:50px 0;}
+
+}
+
+@media screen and (max-width:990px)  {
+    #header {position:fixed; width:100%; top:0; left:0;
+        padding:0 20px; height:90px;  color:#fff; z-index:999999;}
+    #header .open {position:absolute; top:50%; right:30px;
+        transform:translateY(-50%); font-size:15px; color:#fff;}
+    #header .close {position:absolute; top:60px; right:50px;
+        font-size:30px; color:#999;}
+    #header .login {position:absolute; top:50%;
+        transform:translateY(-50%); right:80px;
+        font-size:12px; font-weight:bold;}
+
+    /*article1*/
+    .article1 .slide .text {
+        position:absolute; top:50%; transform:translateY(-50%);
+        left:15%; color:#fff; font-family: 'Poppins', sans-serif;
+    }
+    .article1 .slide .text h3 { font-size:17px;}
+    .article1 .slide .text h2 {font-size:52px; margin:25px 0;}
+    .article1 .slide .text p {font-size:17px; font-family: 'Noto Sans KR',sans-serif;}
+
+    /*article2*/
+    .article2 > div {width:80%; float:none; margin: 0 auto;}
+    .article2 .boxleft {text-align:left; padding-right:30px; opacity:0; ;
+        transform: translate(-20px, 650px); transition:all 0.5s 0.2s; margin-bottom:120px;}
+    .article2.on .boxleft {opacity: 1; transform: translate(0px, 650px);}
+    .article2 .imgbox {width:100%; opacity:0; transform: translateY(-520px); transition:all 1s}
+    .article2.on .imgbox {opacity: 1; transform: translateY(-500px);}
+    .article2 .imgbox img:nth-child(2) {
+        position: absolute; top:80px; left: calc(35% + 50px);
+        box-shadow:20px 20px 40px -8px rgba(0,0,0,0.3);}
+    .article2 .boxright {float:none; padding-left:0px; opacity:0; 
+        transform: translate(20px); transition:all 0.5s 0.2s; }
+    .article2 .boxright li:nth-child(2){opacity:0;  
+        transform: translate(20px); transition:all 0.5s 0.5s;}
+    
+    
+
+    /*article4*/
+    .article4 ul {text-align: center; } 
+    .article4 li {float:none; width:37%; margin:2%; display: inline-block;}
+    .article4 li:nth-child(1) {margin-bottom:40px;}
+    .article4 li:nth-child(2) {margin-right:0; margin-bottom:40px;}
+
+    /*article6*/
+    .article6 > div { width:70%; margin: 0 15%;}
+    .article6 .imgbox {float:left; position:relative; padding-bottom:90px;}
+    .article6 .imgbox > img:first-child {
+         box-shadow:20px 20px 40px -8px rgba(0,0,0,0.3); transform:translate(20px);
+    }
+    .article6 .imgbox > img:last-child {
+        box-shadow:20px 20px 40px -8px rgba(0,0,0,0.3);
+        position: absolute; top:90px; left:120px}
+    .article6 .txtbox {float:right; padding:80px 20px 0 20px; font-size:14px;}
+
+    /* article7 */
+    .article7 .txtbox {width:90%; box-shadow:30px 30px 60px rgba(0,0,0,0.2);
+        padding:100px 100px 80px; background:#5C7CFA; color:#fff;
+        position:absolute; left:50%; transform:translate(-50%); top:0%}
+
+}
+
+
+@media screen and (max-width:770px) {
+
+    /* article2 */
+    .article2 {padding-top:0px; padding-bottom:50px;}
+
+    /* article4 */
+    .article4 {padding-top:90px; padding-bottom:50px;}
+    .article4 > p {font-size:15px; margin:20px 0 50px;
+        color:#777; line-height:1.7; text-align: center;}
+    .article4 li {float:none; width:100%; margin:0%;
+        display:inline-block; margin-bottom:40px;}
+
+    /*article6*/
+    .article6 > div { width:100%; margin: 0 0%;}
+
+    /* article7 */
+    .article7 .txtbox {width:90%; box-shadow:30px 30px 60px rgba(0,0,0,0.2);
+        padding:100px 100px 80px; background:#5C7CFA; color:#fff;
+        position:absolute; left:50%; transform:translate(-50%); top:0%}
+    .article7 .txtbox .txt1 {float: left; width:100%; margin-bottom:80px;}
+    .article7 .txtbox .txt2 {float: right; width:100%;}
+
+}
+
+@media screen and (max-width:500px) {
+    .article1 .slide .text {
+        position:absolute; top:55%; transform:translateY(-50%);
+        left:5%; color:#fff; font-family: 'Poppins', sans-serif;
+    }
+    .article1 .slide .text h2 {font-size:40px; margin:25px 0;}
+    .article1 .slide .text p {font-size:12px; font-family: 'Noto Sans KR',sans-serif;
+        line-height:2;}
+    #header .nav {position:fixed; top:0px; padding:120px 0 0 30px;
+        transform:translateY(0%); right:-440px; color:#555;
+        background: #000; width: 300px;
+        bottom:0; opacity:0;}
+    #header .nav::after {content:''; position:absolute; bottom:100px;
+        left:0; right:0px; height:3px; margin: 0 auto;
+        z-index: 999999; background:#333; width: 200px;}
+    #header .login.on {position:fixed; top:90%; right:-100px; 
+        z-index: 999999; color:#777;width:300px;}
+
+    /* article2 */
+    .article2 > div {width:100%; float:none; margin: 0 auto;}
+    .article2 .imgbox {width:100%; opacity:0; transform: translateY(-600px); transition:all 1s}
+    .article2.on .imgbox {opacity: 1; transform: translateY(-580px);}
+    .article2 .imgbox img:nth-child(2) {
+        position: absolute; top:80px; left: calc(10% + 50px);
+        box-shadow:20px 20px 40px -8px rgba(0,0,0,0.3);}
+    
+    /* article5 */
+    .article5 {
+        background:url(../images/main_parallax_bg.jpg) no-repeat;
+        background-attachment:fixed; height:400px; position:relative;
+    }
+    .article5 .row p {font-size:25px; margin-top:20px; line-height:1.5;}
+
+    /* article6 */
+    .article6 {padding-top:140px; padding-bottom:80px;}
+
+    /* article7 */
+    .article7 .txtbox {width:90%; box-shadow:30px 30px 60px rgba(0,0,0,0.2);
+        padding:40px 30px 50px; background:#5C7CFA; color:#fff;
+        position:absolute; left:50%; transform:translate(-50%); top:0%}
+    .article7 .txt1 .line1 span {position:absolute; right:0px; font-size:14px; opacity:0.8;}
+
+    /* footer */
+    #footer {padding:30px; background:#1B1B1B; color:#666;
+        position: fixed; display: none;
+        width:100%; bottom:0; left:0; z-index:-999; 
+        } 
+    #footer > div:nth-child(2) li > div {display:block; font-size:14px;}
+    #footer > div:nth-child(2) .title {color:#AAA; font-weight: bold;
+        letter-spacing:0.1em; font-family:'Poppins', sans-serif; margin:0 7px 5px 0;}
+    #footer > div:nth-child(2) .contant > a { margin:0 7px; line-height:1.5;}
+
+
+
+
+
+}
